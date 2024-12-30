@@ -1,0 +1,190 @@
+Sun Dec 29 13:22:36 CST 2024: LightBlue® app launched
+
+Sun Dec 29 13:22:36 CST 2024: App foregrounded
+
+Sun Dec 29 13:23:33 CST 2024: Connecting to 12:F1:0A:04:27:D0 (ck_10024a18a0)
+
+Sun Dec 29 13:23:37 CST 2024: Connected to 12:F1:0A:04:27:D0 (ck_10024a18a0)
+
+Sun Dec 29 13:23:37 CST 2024: Discovering services for 12:F1:0A:04:27:D0 (ck_10024a18a0)
+
+Sun Dec 29 13:23:37 CST 2024: Discovered 3 services for 12:F1:0A:04:27:D0.
+
+Sun Dec 29 13:23:37 CST 2024: 
+                Service 00001800-0000-1000-8000-00805f9b34fb
+                Characteristics: 
+                |--00002a04-0000-1000-8000-00805f9b34fb: Properties: Read
+            
+
+Sun Dec 29 13:23:37 CST 2024: 
+                Service 00001801-0000-1000-8000-00805f9b34fb
+                Characteristics: 
+                |--00002a05-0000-1000-8000-00805f9b34fb: Properties: Indicate
+|------00002902-0000-1000-8000-00805f9b34fb: <EMPTY>
+            
+
+Sun Dec 29 13:23:37 CST 2024: 
+                Service 0000aaaa-0000-1000-8000-00805f9b34fb
+                Characteristics: 
+                |--0000bbb1-0000-1000-8000-00805f9b34fb: Properties: Read, Notify
+|------00002902-0000-1000-8000-00805f9b34fb: <EMPTY>
+|--0000bbb0-0000-1000-8000-00805f9b34fb: Properties: Write
+|--0000bbb3-0000-1000-8000-00805f9b34fb: Properties: Read, Notify
+|------00002902-0000-1000-8000-00805f9b34fb: <EMPTY>
+|--0000bbb2-0000-1000-8000-00805f9b34fb: Properties: Write
+            
+
+Sun Dec 29 13:23:53 CST 2024: Reading from characteristic 00002a04-0000-1000-8000-00805f9b34fb
+
+Sun Dec 29 13:23:53 CST 2024: Read characteristic 00002a04-0000-1000-8000-00805f9b34fb | value: 14 00 28 00 00 00 E8 03
+
+Sun Dec 29 13:24:12 CST 2024: Enabling notifications/indications on 0000bbb1-0000-1000-8000-00805f9b34fb
+
+Sun Dec 29 13:24:13 CST 2024: Notifications or indications ENABLED on 0000bbb1-0000-1000-8000-00805f9b34fb
+
+Sun Dec 29 13:24:13 CST 2024: Wrote to descriptor 00002902-0000-1000-8000-00805f9b34fb | operation type: EnableNotifications(device=v4.f@2a88223e, characteristicUuid=0000bbb1-0000-1000-8000-00805f9b34fb, serviceUuid=0000aaaa-0000-1000-8000-00805f9b34fb)
+
+Sun Dec 29 13:24:15 CST 2024: Reading from characteristic 0000bbb1-0000-1000-8000-00805f9b34fb
+
+Sun Dec 29 13:24:16 CST 2024: Read characteristic 0000bbb1-0000-1000-8000-00805f9b34fb | value: 88
+
+Sun Dec 29 13:24:37 CST 2024: onConnectionStateChange: status 19 encountered for 12:F1:0A:04:27:D0!
+
+Sun Dec 29 13:24:37 CST 2024: Disconnecting from 12:F1:0A:04:27:D0 (null)
+
+Sun Dec 29 13:24:37 CST 2024: Disconnected from 12:F1:0A:04:27:D0 (null)
+
+Sun Dec 29 13:25:07 CST 2024: App backgrounded
+
+Sun Dec 29 13:25:30 CST 2024: App foregrounded
+
+Sun Dec 29 13:26:48 CST 2024: Connecting to 12:F1:0A:04:27:D0 (ck_10024a18a0)
+
+Sun Dec 29 13:26:50 CST 2024: Connected to 12:F1:0A:04:27:D0 (ck_10024a18a0)
+
+Sun Dec 29 13:26:50 CST 2024: Discovering services for 12:F1:0A:04:27:D0 (ck_10024a18a0)
+
+Sun Dec 29 13:26:50 CST 2024: Discovered 3 services for 12:F1:0A:04:27:D0.
+
+Sun Dec 29 13:26:50 CST 2024: 
+                Service 00001800-0000-1000-8000-00805f9b34fb
+                Characteristics: 
+                |--00002a04-0000-1000-8000-00805f9b34fb: Properties: Read
+            
+
+Sun Dec 29 13:26:50 CST 2024: 
+                Service 00001801-0000-1000-8000-00805f9b34fb
+                Characteristics: 
+                |--00002a05-0000-1000-8000-00805f9b34fb: Properties: Indicate
+|------00002902-0000-1000-8000-00805f9b34fb: <EMPTY>
+            
+
+Sun Dec 29 13:26:50 CST 2024: 
+                Service 0000aaaa-0000-1000-8000-00805f9b34fb
+                Characteristics: 
+                |--0000bbb1-0000-1000-8000-00805f9b34fb: Properties: Read, Notify
+|------00002902-0000-1000-8000-00805f9b34fb: <EMPTY>
+|--0000bbb0-0000-1000-8000-00805f9b34fb: Properties: Write
+|--0000bbb3-0000-1000-8000-00805f9b34fb: Properties: Read, Notify
+|------00002902-0000-1000-8000-00805f9b34fb: <EMPTY>
+|--0000bbb2-0000-1000-8000-00805f9b34fb: Properties: Write
+            
+
+Sun Dec 29 13:27:10 CST 2024: Reading from characteristic 0000bbb1-0000-1000-8000-00805f9b34fb
+
+Sun Dec 29 13:27:10 CST 2024: Read characteristic 0000bbb1-0000-1000-8000-00805f9b34fb | value: 88
+
+Sun Dec 29 13:27:47 CST 2024: Reading from characteristic 0000bbb1-0000-1000-8000-00805f9b34fb
+
+Sun Dec 29 13:27:47 CST 2024: Read characteristic 0000bbb1-0000-1000-8000-00805f9b34fb | value: 88
+
+Sun Dec 29 13:27:50 CST 2024: onConnectionStateChange: status 19 encountered for 12:F1:0A:04:27:D0!
+
+Sun Dec 29 13:27:50 CST 2024: Disconnecting from 12:F1:0A:04:27:D0 (null)
+
+Sun Dec 29 13:27:50 CST 2024: Disconnected from 12:F1:0A:04:27:D0 (null)
+
+Sun Dec 29 13:27:58 CST 2024: Connecting to 12:F1:0A:04:27:D0 (ck_10024a18a0)
+
+Sun Dec 29 13:28:03 CST 2024: Connected to 12:F1:0A:04:27:D0 (ck_10024a18a0)
+
+Sun Dec 29 13:28:03 CST 2024: Discovering services for 12:F1:0A:04:27:D0 (ck_10024a18a0)
+
+Sun Dec 29 13:28:03 CST 2024: Discovered 3 services for 12:F1:0A:04:27:D0.
+
+Sun Dec 29 13:28:03 CST 2024: 
+                Service 00001800-0000-1000-8000-00805f9b34fb
+                Characteristics: 
+                |--00002a04-0000-1000-8000-00805f9b34fb: Properties: Read
+            
+
+Sun Dec 29 13:28:03 CST 2024: 
+                Service 00001801-0000-1000-8000-00805f9b34fb
+                Characteristics: 
+                |--00002a05-0000-1000-8000-00805f9b34fb: Properties: Indicate
+|------00002902-0000-1000-8000-00805f9b34fb: <EMPTY>
+            
+
+Sun Dec 29 13:28:03 CST 2024: 
+                Service 0000aaaa-0000-1000-8000-00805f9b34fb
+                Characteristics: 
+                |--0000bbb1-0000-1000-8000-00805f9b34fb: Properties: Read, Notify
+|------00002902-0000-1000-8000-00805f9b34fb: <EMPTY>
+|--0000bbb0-0000-1000-8000-00805f9b34fb: Properties: Write
+|--0000bbb3-0000-1000-8000-00805f9b34fb: Properties: Read, Notify
+|------00002902-0000-1000-8000-00805f9b34fb: <EMPTY>
+|--0000bbb2-0000-1000-8000-00805f9b34fb: Properties: Write
+            
+
+Sun Dec 29 13:28:46 CST 2024: Enabling notifications/indications on 00002a05-0000-1000-8000-00805f9b34fb
+
+Sun Dec 29 13:28:47 CST 2024: Notifications or indications ENABLED on 00002a05-0000-1000-8000-00805f9b34fb
+
+Sun Dec 29 13:28:47 CST 2024: Wrote to descriptor 00002902-0000-1000-8000-00805f9b34fb | operation type: EnableNotifications(device=v4.f@2a88223e, characteristicUuid=00002a05-0000-1000-8000-00805f9b34fb, serviceUuid=00001801-0000-1000-8000-00805f9b34fb)
+
+Sun Dec 29 13:29:02 CST 2024: Reading from characteristic 0000bbb1-0000-1000-8000-00805f9b34fb
+
+Sun Dec 29 13:29:02 CST 2024: Read characteristic 0000bbb1-0000-1000-8000-00805f9b34fb | value: 88
+
+Sun Dec 29 13:29:03 CST 2024: onConnectionStateChange: status 19 encountered for 12:F1:0A:04:27:D0!
+
+Sun Dec 29 13:29:03 CST 2024: Disconnecting from 12:F1:0A:04:27:D0 (null)
+
+Sun Dec 29 13:29:03 CST 2024: Disconnected from 12:F1:0A:04:27:D0 (null)
+
+Sun Dec 29 13:29:11 CST 2024: Connecting to 12:F1:0A:04:27:D0 (ck_10024a18a0)
+
+Sun Dec 29 13:29:14 CST 2024: Connected to 12:F1:0A:04:27:D0 (ck_10024a18a0)
+
+Sun Dec 29 13:29:14 CST 2024: Discovering services for 12:F1:0A:04:27:D0 (ck_10024a18a0)
+
+Sun Dec 29 13:29:14 CST 2024: Discovered 3 services for 12:F1:0A:04:27:D0.
+
+Sun Dec 29 13:29:14 CST 2024: 
+                Service 00001800-0000-1000-8000-00805f9b34fb
+                Characteristics: 
+                |--00002a04-0000-1000-8000-00805f9b34fb: Properties: Read
+            
+
+Sun Dec 29 13:29:14 CST 2024: 
+                Service 00001801-0000-1000-8000-00805f9b34fb
+                Characteristics: 
+                |--00002a05-0000-1000-8000-00805f9b34fb: Properties: Indicate
+|------00002902-0000-1000-8000-00805f9b34fb: <EMPTY>
+            
+
+Sun Dec 29 13:29:14 CST 2024: 
+                Service 0000aaaa-0000-1000-8000-00805f9b34fb
+                Characteristics: 
+                |--0000bbb1-0000-1000-8000-00805f9b34fb: Properties: Read, Notify
+|------00002902-0000-1000-8000-00805f9b34fb: <EMPTY>
+|--0000bbb0-0000-1000-8000-00805f9b34fb: Properties: Write
+|--0000bbb3-0000-1000-8000-00805f9b34fb: Properties: Read, Notify
+|------00002902-0000-1000-8000-00805f9b34fb: <EMPTY>
+|--0000bbb2-0000-1000-8000-00805f9b34fb: Properties: Write
+            
+
+Sun Dec 29 13:29:25 CST 2024: Reading from characteristic 0000bbb3-0000-1000-8000-00805f9b34fb
+
+Sun Dec 29 13:29:25 CST 2024: Read characteristic 0000bbb3-0000-1000-8000-00805f9b34fb | value: 88
+

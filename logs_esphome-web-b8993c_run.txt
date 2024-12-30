@@ -1,0 +1,1563 @@
+INFO ESPHome 2024.12.2
+INFO Reading configuration /root/config/esphome-web-b8993c.yaml...
+INFO Generating C++ source...
+INFO Updating https://github.com/espressif/esp-protocols.git@mdns-v1.3.2
+INFO Compiling app...
+Processing esphome-web-b8993c (board: esp32dev; framework: espidf; platform: https://github.com/pioarduino/platform-espressif32.git#51.03.07)
+--------------------------------------------------------------------------------
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+ - framework-espidf @ 3.50105.0 (5.1.5) 
+ - tool-cmake @ 3.21.3 
+ - tool-esptoolpy @ 4.8.1 
+ - tool-mklittlefs @ 3.2.0 
+ - tool-ninja @ 1.7.1 
+ - tool-riscv32-esp-elf-gdb @ 12.1.0+20221002 
+ - tool-xtensa-esp-elf-gdb @ 12.1.0+20221002 
+ - toolchain-esp32ulp @ 2.35.0-20220830 
+ - toolchain-xtensa-esp32 @ 12.2.0+20230208
+Reading CMake configuration...
+No dependencies
+Compiling .pioenvs/esphome-web-b8993c/src/main.cpp.o
+Linking .pioenvs/esphome-web-b8993c/firmware.elf
+RAM:   [==        ]  17.3% (used 56588 bytes from 327680 bytes)
+Flash: [=======   ]  68.2% (used 1250745 bytes from 1835008 bytes)
+Building .pioenvs/esphome-web-b8993c/firmware.bin
+Creating esp32 image...
+Successfully created esp32 image.
+esp32_create_combined_bin([".pioenvs/esphome-web-b8993c/firmware.bin"], [".pioenvs/esphome-web-b8993c/firmware.elf"])
+Wrote 0x142f70 bytes to file /root/config/.esphome/build/esphome-web-b8993c/.pioenvs/esphome-web-b8993c/firmware.factory.bin, ready to flash to offset 0x0
+esp32_copy_ota_bin([".pioenvs/esphome-web-b8993c/firmware.bin"], [".pioenvs/esphome-web-b8993c/firmware.elf"])
+========================= [SUCCESS] Took 14.47 seconds =========================
+INFO Successfully compiled program.
+INFO Connecting to 172.16.0.136 port 3232...
+INFO Connected to 172.16.0.136
+INFO Uploading /root/config/.esphome/build/esphome-web-b8993c/.pioenvs/esphome-web-b8993c/firmware.bin (1257328 bytes)
+Uploading: [============================================================] 100% Done...
+
+INFO Upload took 13.52 seconds, waiting for result...
+INFO OTA successful
+INFO Successfully uploaded program.
+INFO Starting log output from 172.16.0.136 using esphome API
+INFO Successfully connected to esphome-web-b8993c @ 172.16.0.136 in 11.285s
+INFO Successful handshake with esphome-web-b8993c @ 172.16.0.136 in 0.054s
+[13:39:08][I][app:100]: ESPHome version 2024.12.2 compiled on Dec 30 2024, 13:38:24
+[13:39:08][C][wifi:600]: WiFi:
+[13:39:08][C][wifi:428]:   Local MAC: 08:3A:F2:B8:99:3C
+[13:39:08][C][wifi:433]:   SSID: 'InformationAwarenessOffice'[redacted]
+[13:39:08][C][wifi:436]:   IP Address: 172.16.0.136
+[13:39:08][C][wifi:439]:   BSSID: 7E:8A:20:87:9C:D0[redacted]
+[13:39:08][C][wifi:441]:   Hostname: 'esphome-web-b8993c'
+[13:39:08][C][wifi:443]:   Signal strength: -70 dB ▂▄▆█
+[13:39:08][C][wifi:447]:   Channel: 11
+[13:39:08][C][wifi:448]:   Subnet: 255.255.255.0
+[13:39:08][C][wifi:449]:   Gateway: 172.16.0.1
+[13:39:08][C][wifi:450]:   DNS1: 192.168.0.78
+[13:39:08][C][wifi:451]:   DNS2: 192.168.0.82
+[13:39:08][C][logger:185]: Logger:
+[13:39:08][C][logger:186]:   Level: DEBUG
+[13:39:08][C][logger:188]:   Log Baud Rate: 115200
+[13:39:08][C][logger:189]:   Hardware UART: UART0
+[13:39:08][C][template.binary_sensor:028]: Template Binary Sensor 'BMT01 interface Connection'
+[13:39:08][C][ble_presence:011]: BLE Presence 'BMT01 interface BLE Status'
+[13:39:08][C][ble_rssi:011]: BLE RSSI Sensor 'BMT01 interface BLE RSSI'
+[13:39:08][C][ble_rssi:011]:   Device Class: 'signal_strength'
+[13:39:08][C][ble_rssi:011]:   State Class: 'measurement'
+[13:39:08][C][ble_rssi:011]:   Unit of Measurement: 'dBm'
+[13:39:08][C][ble_rssi:011]:   Accuracy Decimals: 0
+[13:39:08][C][ble_sensor:017]: BLE Sensor 'BMT01 battery level'
+[13:39:08][C][ble_sensor:017]:   State Class: ''
+[13:39:08][C][ble_sensor:017]:   Unit of Measurement: '%'
+[13:39:08][C][ble_sensor:017]:   Accuracy Decimals: 0
+[13:39:08][C][ble_sensor:017]:   Icon: 'mdi:battery'
+[13:39:08][C][ble_sensor:018]:   MAC address        : 12:F1:0A:04:27:D0
+[13:39:08][C][ble_sensor:019]:   Service UUID       : 0000180F-0000-1000-8000-00805F9B34FB
+[13:39:08][C][ble_sensor:020]:   Characteristic UUID: 00002A19-0000-1000-8000-00805F9B34FB
+[13:39:08][C][ble_sensor:021]:   Descriptor UUID    : 00000000-0000-0000-0000-000000000000
+[13:39:08][C][ble_sensor:022]:   Notifications      : NO
+[13:39:08][C][ble_sensor:023]:   Update Interval: 60.0s
+[13:39:08][C][ble_sensor:017]: BLE Sensor 'Characteristic bbb1'
+[13:39:08][C][ble_sensor:017]:   State Class: ''
+[13:39:08][C][ble_sensor:017]:   Unit of Measurement: ''
+[13:39:08][C][ble_sensor:017]:   Accuracy Decimals: 0
+[13:39:08][C][ble_sensor:018]:   MAC address        : 12:F1:0A:04:27:D0
+[13:39:08][C][ble_sensor:019]:   Service UUID       : 0000AAAA-0000-1000-8000-00805F9B34FB
+[13:39:08][C][ble_sensor:020]:   Characteristic UUID: 0000BBB1-0000-1000-8000-00805F9B34FB
+[13:39:08][C][ble_sensor:021]:   Descriptor UUID    : 00000000-0000-0000-0000-000000000000
+[13:39:08][C][ble_sensor:022]:   Notifications      : YES
+[13:39:08][C][ble_sensor:023]:   Update Interval: 30.0s
+[13:39:08][C][ble_sensor:017]: BLE Sensor 'Characteristic bbb3'
+[13:39:08][C][ble_sensor:017]:   State Class: ''
+[13:39:08][C][ble_sensor:017]:   Unit of Measurement: ''
+[13:39:08][C][ble_sensor:017]:   Accuracy Decimals: 0
+[13:39:08][C][ble_sensor:018]:   MAC address        : 12:F1:0A:04:27:D0
+[13:39:08][C][ble_sensor:019]:   Service UUID       : 0000AAAA-0000-1000-8000-00805F9B34FB
+[13:39:08][C][ble_sensor:020]:   Characteristic UUID: 0000BBB3-0000-1000-8000-00805F9B34FB
+[13:39:08][C][ble_sensor:021]:   Descriptor UUID    : 00000000-0000-0000-0000-000000000000
+[13:39:08][C][ble_sensor:022]:   Notifications      : YES
+[13:39:08][C][ble_sensor:023]:   Update Interval: 30.0s
+[13:39:08][C][esp32_ble:418]: ESP32 BLE:
+[13:39:08][C][esp32_ble:419]:   MAC address: 08:3A:F2:B8:99:3E
+[13:39:08][C][esp32_ble:421]:   IO Capability: none
+[13:39:08][C][ble_client:027]: BLE Client:
+[13:39:08][C][ble_client:028]:   Address: 12:F1:0A:04:27:D0
+[13:39:08][C][esp32_ble_tracker:665]:   Scan Type: ACTIVE
+[13:39:08][C][esp32_ble_tracker:666]:   Continuous Scanning: True
+[13:39:08][C][mdns:116]: mDNS:
+[13:39:08][C][mdns:117]:   Hostname: esphome-web-b8993c
+[13:39:08][C][esphome.ota:073]: Over-The-Air updates:
+[13:39:08][C][esphome.ota:074]:   Address: esphome-web-b8993c.homestead.kewanee.net:3232
+[13:39:08][C][esphome.ota:075]:   Version: 2
+[13:39:08][C][safe_mode:018]: Safe Mode:
+[13:39:09][C][safe_mode:019]:   Boot considered successful after 60 seconds
+[13:39:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:39:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:39:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:39:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:39:38][D][esp-idf:000][wifi]: W (42076) wifi:
+[13:39:38][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[13:39:38][D][esp-idf:000][wifi]: 
+
+[13:39:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:39:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:39:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:39:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:39:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:39:57][I][safe_mode:041]: Boot seems successful; resetting boot loop counter
+[13:39:57][D][esp32.preferences:114]: Saving 1 preferences to flash...
+[13:39:57][D][esp32.preferences:142]: Saving 1 preferences to flash: 0 cached, 1 written, 0 failed
+[13:40:06][D][esp-idf:000][BTU_TASK]: W (70602) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[13:40:06][D][esp-idf:000][BTU_TASK]: W (70608) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[13:40:06][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[13:40:06][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[13:40:06][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[13:40:06][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:40:06][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[13:40:06][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:40:06][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[13:40:06][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[13:40:06][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:40:07][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[13:40:07][D][ble_client_lambda:056]: BMT01 interface
+[13:40:07][W][component:237]: Component esp32_ble took a long time for an operation (61 ms).
+[13:40:07][W][component:238]: Components should block for at most 30 ms.
+[13:40:07][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -49.00000 dBm with 0 decimals of accuracy
+[13:40:07][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[13:40:07][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-49
+[13:40:07][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[13:40:09][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[13:40:09][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[13:40:09][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[13:40:09][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[13:40:09][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[13:40:09][D][esp32_ble_tracker:273]: Starting scan...
+[13:40:10][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[13:40:10][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[13:40:10][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[13:40:10][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:40:10][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[13:40:10][D][ble_client_lambda:050]: BMT01 interface
+[13:40:10][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[13:40:10][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:40:10][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:40:10][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[13:40:10][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:40:10][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:40:10][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[13:40:10][W][component:237]: Component esp32_ble took a long time for an operation (70 ms).
+[13:40:10][W][component:238]: Components should block for at most 30 ms.
+[13:40:10][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[13:40:10][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:40:10][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:40:18][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:40:18][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:40:18][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:40:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:40:20][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:40:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:40:38][D][esp-idf:000][wifi]: W (102246) wifi:
+[13:40:38][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[13:40:38][D][esp-idf:000][wifi]: 
+
+[13:40:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:40:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:40:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:40:51][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:40:51][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:41:08][D][esp-idf:000][wifi]: W (132332) wifi:
+[13:41:08][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[13:41:08][D][esp-idf:000][wifi]: 
+
+[13:41:09][D][esp-idf:000][BTU_TASK]: W (133388) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[13:41:09][D][esp-idf:000][BTU_TASK]: W (133392) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[13:41:09][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[13:41:09][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[13:41:09][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[13:41:09][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:41:09][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[13:41:09][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:41:09][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[13:41:09][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[13:41:09][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:41:09][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[13:41:09][D][ble_client_lambda:056]: BMT01 interface
+[13:41:09][W][component:237]: Component esp32_ble took a long time for an operation (64 ms).
+[13:41:09][W][component:238]: Components should block for at most 30 ms.
+[13:41:09][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[13:41:10][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -51.00000 dBm with 0 decimals of accuracy
+[13:41:10][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[13:41:10][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-51
+[13:41:10][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[13:41:10][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[13:41:10][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:41:10][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:41:10][D][esp-idf:000][BTU_TASK]: E (134048) BT_BTM: BTM_BleScan scan not active
+
+
+[13:41:10][D][esp-idf:000][BTU_TASK]: W (134058) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[13:41:14][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[13:41:14][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[13:41:14][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[13:41:14][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[13:41:14][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[13:41:14][D][esp32_ble_tracker:273]: Starting scan...
+[13:41:15][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[13:41:15][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[13:41:15][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[13:41:15][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:41:15][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[13:41:15][D][ble_client_lambda:050]: BMT01 interface
+[13:41:15][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[13:41:15][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:41:15][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:41:15][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[13:41:15][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:41:15][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:41:15][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[13:41:15][W][component:237]: Component esp32_ble took a long time for an operation (70 ms).
+[13:41:15][W][component:238]: Components should block for at most 30 ms.
+[13:41:15][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[13:41:15][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:41:15][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:41:18][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:41:18][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:41:18][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:41:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:41:20][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:41:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:41:38][D][esp-idf:000][wifi]: W (162421) wifi:
+[13:41:38][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[13:41:38][D][esp-idf:000][wifi]: 
+
+[13:41:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:41:48][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:41:48][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:41:51][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:41:51][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:42:14][D][esp-idf:000][BTU_TASK]: W (198544) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[13:42:14][D][esp-idf:000][BTU_TASK]: W (198550) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[13:42:14][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[13:42:14][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[13:42:14][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[13:42:14][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:42:14][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[13:42:14][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:42:14][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[13:42:14][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[13:42:14][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:42:14][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[13:42:14][D][ble_client_lambda:056]: BMT01 interface
+[13:42:14][W][component:237]: Component esp32_ble took a long time for an operation (52 ms).
+[13:42:14][W][component:238]: Components should block for at most 30 ms.
+[13:42:14][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -51.00000 dBm with 0 decimals of accuracy
+[13:42:14][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[13:42:14][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-51
+[13:42:14][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[13:42:14][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[13:42:14][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:42:15][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[13:42:15][I][esp32_ble_client:066]: [0] [12:F1:0A:04:27:D0] 0x00 Attempting BLE connection
+[13:42:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:42:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[13:42:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[13:42:17][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[13:42:17][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[13:42:17][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[13:42:17][D][esp32_ble_tracker:273]: Starting scan...
+[13:42:18][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[13:42:18][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[13:42:18][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[13:42:18][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:42:18][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[13:42:18][D][ble_client_lambda:050]: BMT01 interface
+[13:42:18][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[13:42:18][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:42:18][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:42:18][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[13:42:18][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:42:18][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:42:18][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[13:42:18][W][component:237]: Component esp32_ble took a long time for an operation (71 ms).
+[13:42:18][W][component:238]: Components should block for at most 30 ms.
+[13:42:18][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[13:42:18][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:42:18][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:42:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:42:20][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:42:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:42:38][D][esp-idf:000][wifi]: W (222593) wifi:
+[13:42:38][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[13:42:38][D][esp-idf:000][wifi]: 
+
+[13:42:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:42:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:42:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:42:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:42:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:42:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:43:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:43:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:43:17][D][esp-idf:000][BTU_TASK]: W (261475) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[13:43:17][D][esp-idf:000][BTU_TASK]: W (261480) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[13:43:17][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[13:43:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[13:43:17][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[13:43:17][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:43:17][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[13:43:17][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:43:17][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[13:43:17][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[13:43:17][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:43:17][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[13:43:17][D][ble_client_lambda:056]: BMT01 interface
+[13:43:17][W][component:237]: Component esp32_ble took a long time for an operation (67 ms).
+[13:43:19][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -52.00000 dBm with 0 decimals of accuracy
+[13:43:19][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[13:43:19][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-52
+[13:43:19][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[13:43:19][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[13:43:19][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:43:19][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:43:19][D][esp-idf:000][BTU_TASK]: E (263357) BT_BTM: BTM_BleScan scan not active
+
+
+[13:43:19][D][esp-idf:000][BTU_TASK]: W (263362) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[13:43:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:43:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[13:43:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[13:43:20][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[13:43:20][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[13:43:20][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[13:43:20][D][esp32_ble_tracker:273]: Starting scan...
+[13:43:21][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[13:43:21][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[13:43:21][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[13:43:21][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:43:21][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[13:43:21][D][ble_client_lambda:050]: BMT01 interface
+[13:43:21][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[13:43:21][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:43:21][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:43:21][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[13:43:21][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:43:21][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:43:21][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[13:43:21][W][component:237]: Component esp32_ble took a long time for an operation (70 ms).
+[13:43:21][W][component:238]: Components should block for at most 30 ms.
+[13:43:21][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[13:43:21][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:43:21][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:43:39][D][esp-idf:000][wifi]: W (282766) wifi:
+[13:43:39][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[13:43:39][D][esp-idf:000][wifi]: 
+
+[13:43:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:43:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:43:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:43:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:43:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:43:50][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:43:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:44:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:44:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:44:20][D][esp-idf:000][BTU_TASK]: W (324050) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[13:44:20][D][esp-idf:000][BTU_TASK]: W (324054) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[13:44:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:44:20][W][ble_sensor:078]: Error reading char at handle 10, status=133
+[13:44:20][W][ble_sensor:078]: Error reading char at handle 10, status=133
+[13:44:20][W][ble_sensor:078]: Error reading char at handle 10, status=133
+[13:44:20][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[13:44:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[13:44:20][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[13:44:20][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:44:20][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[13:44:20][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:44:20][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[13:44:20][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[13:44:20][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:44:20][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[13:44:20][D][ble_client_lambda:056]: BMT01 interface
+[13:44:20][W][component:237]: Component esp32_ble took a long time for an operation (96 ms).
+[13:44:20][W][component:238]: Components should block for at most 30 ms.
+[13:44:20][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[13:44:21][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -51.00000 dBm with 0 decimals of accuracy
+[13:44:21][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[13:44:21][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-51
+[13:44:21][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[13:44:21][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[13:44:21][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:44:21][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:44:21][D][esp-idf:000][BTU_TASK]: E (325382) BT_BTM: BTM_BleScan scan not active
+
+
+[13:44:21][D][esp-idf:000][BTU_TASK]: W (325392) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[13:44:23][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[13:44:23][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[13:44:23][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[13:44:23][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[13:44:23][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[13:44:23][D][esp32_ble_tracker:273]: Starting scan...
+[13:44:23][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[13:44:23][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[13:44:23][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[13:44:23][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:44:23][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[13:44:23][D][ble_client_lambda:050]: BMT01 interface
+[13:44:23][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[13:44:23][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:44:23][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:44:23][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[13:44:23][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:44:23][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:44:23][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[13:44:23][W][component:237]: Component esp32_ble took a long time for an operation (71 ms).
+[13:44:23][W][component:238]: Components should block for at most 30 ms.
+[13:44:23][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[13:44:24][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:44:24][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:44:39][D][esp-idf:000][wifi]: W (342839) wifi:
+[13:44:39][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[13:44:39][D][esp-idf:000][wifi]: 
+
+[13:44:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:44:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:44:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:44:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:44:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:44:50][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:44:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:45:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:45:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:45:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:45:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:45:23][D][esp-idf:000][BTU_TASK]: W (387215) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[13:45:23][D][esp-idf:000][BTU_TASK]: W (387218) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[13:45:23][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[13:45:23][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[13:45:23][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[13:45:23][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:45:23][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[13:45:23][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:45:23][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[13:45:23][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[13:45:23][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:45:23][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[13:45:23][D][ble_client_lambda:056]: BMT01 interface
+[13:45:23][W][component:237]: Component esp32_ble took a long time for an operation (66 ms).
+[13:45:23][W][component:238]: Components should block for at most 30 ms.
+[13:45:23][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[13:45:24][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -49.00000 dBm with 0 decimals of accuracy
+[13:45:24][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[13:45:24][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-49
+[13:45:24][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[13:45:24][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[13:45:24][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:45:24][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:45:24][D][esp-idf:000][BTU_TASK]: E (388172) BT_BTM: BTM_BleScan scan not active
+
+
+[13:45:24][D][esp-idf:000][BTU_TASK]: W (388181) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[13:45:26][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[13:45:26][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[13:45:26][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[13:45:26][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[13:45:26][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[13:45:26][D][esp32_ble_tracker:273]: Starting scan...
+[13:45:27][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[13:45:27][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[13:45:27][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[13:45:27][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:45:27][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[13:45:27][D][ble_client_lambda:050]: BMT01 interface
+[13:45:27][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[13:45:27][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:45:27][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:45:27][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[13:45:27][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:45:27][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:45:27][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[13:45:27][W][component:237]: Component esp32_ble took a long time for an operation (71 ms).
+[13:45:27][W][component:238]: Components should block for at most 30 ms.
+[13:45:27][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[13:45:27][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:45:27][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:45:39][D][esp-idf:000][wifi]: W (403010) wifi:
+[13:45:39][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[13:45:39][D][esp-idf:000][wifi]: 
+
+[13:45:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:45:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:45:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:45:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:45:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:45:50][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:45:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:46:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:46:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:46:21][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:46:21][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:46:26][D][esp-idf:000][BTU_TASK]: W (450265) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[13:46:26][D][esp-idf:000][BTU_TASK]: W (450269) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[13:46:26][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[13:46:26][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[13:46:26][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[13:46:26][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:46:26][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[13:46:26][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:46:26][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[13:46:26][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[13:46:26][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:46:26][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[13:46:26][D][ble_client_lambda:056]: BMT01 interface
+[13:46:26][W][component:237]: Component esp32_ble took a long time for an operation (64 ms).
+[13:46:26][W][component:238]: Components should block for at most 30 ms.
+[13:46:26][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -49.00000 dBm with 0 decimals of accuracy
+[13:46:26][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[13:46:26][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-49
+[13:46:26][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[13:46:26][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[13:46:26][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:46:26][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[13:46:26][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:46:26][D][esp-idf:000][BTU_TASK]: E (450412) BT_BTM: BTM_BleScan scan not active
+
+
+[13:46:26][D][esp-idf:000][BTU_TASK]: W (450421) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[13:46:29][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[13:46:29][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[13:46:29][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[13:46:29][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[13:46:29][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[13:46:29][D][esp32_ble_tracker:273]: Starting scan...
+[13:46:30][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[13:46:30][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[13:46:30][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[13:46:30][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:46:30][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[13:46:30][D][ble_client_lambda:050]: BMT01 interface
+[13:46:30][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[13:46:30][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:46:30][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:46:30][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[13:46:30][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:46:30][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:46:30][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[13:46:30][W][component:237]: Component esp32_ble took a long time for an operation (70 ms).
+[13:46:30][W][component:238]: Components should block for at most 30 ms.
+[13:46:30][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[13:46:30][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:46:30][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:46:39][D][esp-idf:000][wifi]: W (463185) wifi:
+[13:46:39][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[13:46:39][D][esp-idf:000][wifi]: 
+
+[13:46:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:46:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:46:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:46:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:46:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:46:50][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:46:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:47:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:47:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:47:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:47:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:47:30][D][esp-idf:000][BTU_TASK]: W (514010) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[13:47:30][D][esp-idf:000][BTU_TASK]: W (514014) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[13:47:30][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[13:47:30][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[13:47:30][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[13:47:30][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:47:30][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[13:47:30][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:47:30][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[13:47:30][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[13:47:30][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:47:30][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[13:47:30][D][ble_client_lambda:056]: BMT01 interface
+[13:47:30][W][component:237]: Component esp32_ble took a long time for an operation (66 ms).
+[13:47:30][W][component:238]: Components should block for at most 30 ms.
+[13:47:30][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[13:47:30][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -48.00000 dBm with 0 decimals of accuracy
+[13:47:30][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[13:47:30][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-48
+[13:47:30][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[13:47:30][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[13:47:30][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:47:30][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:47:30][D][esp-idf:000][BTU_TASK]: E (514244) BT_BTM: BTM_BleScan scan not active
+
+
+[13:47:30][D][esp-idf:000][BTU_TASK]: W (514253) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[13:47:32][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[13:47:32][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[13:47:32][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[13:47:32][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[13:47:32][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[13:47:32][D][esp32_ble_tracker:273]: Starting scan...
+[13:47:33][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[13:47:33][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[13:47:33][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[13:47:33][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:47:33][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[13:47:33][D][ble_client_lambda:050]: BMT01 interface
+[13:47:33][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[13:47:33][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:47:33][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:47:33][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[13:47:33][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:47:33][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:47:33][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[13:47:33][W][component:237]: Component esp32_ble took a long time for an operation (70 ms).
+[13:47:33][W][component:238]: Components should block for at most 30 ms.
+[13:47:33][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[13:47:33][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:47:33][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:47:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:47:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:47:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:47:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:47:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:47:50][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:47:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:48:18][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:48:18][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:48:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:48:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:48:32][D][esp-idf:000][BTU_TASK]: W (576382) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[13:48:32][D][esp-idf:000][BTU_TASK]: W (576387) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[13:48:32][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[13:48:32][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[13:48:32][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[13:48:32][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:48:32][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[13:48:32][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:48:32][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[13:48:32][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[13:48:32][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:48:32][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[13:48:32][D][ble_client_lambda:056]: BMT01 interface
+[13:48:32][W][component:237]: Component esp32_ble took a long time for an operation (53 ms).
+[13:48:32][W][component:238]: Components should block for at most 30 ms.
+[13:48:32][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[13:48:33][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -49.00000 dBm with 0 decimals of accuracy
+[13:48:33][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[13:48:33][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-49
+[13:48:33][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[13:48:33][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[13:48:33][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:48:33][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:48:33][D][esp-idf:000][BTU_TASK]: E (576877) BT_BTM: BTM_BleScan scan not active
+
+
+[13:48:33][D][esp-idf:000][BTU_TASK]: W (576885) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[13:48:34][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[13:48:34][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[13:48:34][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[13:48:34][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[13:48:34][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[13:48:34][D][esp32_ble_tracker:273]: Starting scan...
+[13:48:35][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[13:48:35][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[13:48:35][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[13:48:35][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:48:35][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[13:48:35][D][ble_client_lambda:050]: BMT01 interface
+[13:48:35][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[13:48:35][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:48:35][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:48:35][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[13:48:35][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:48:35][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:48:35][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[13:48:35][W][component:237]: Component esp32_ble took a long time for an operation (71 ms).
+[13:48:35][W][component:238]: Components should block for at most 30 ms.
+[13:48:35][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[13:48:35][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:48:35][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:48:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:48:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:48:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:48:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:48:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:48:50][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:48:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:49:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:49:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:49:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:49:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:49:35][D][esp-idf:000][BTU_TASK]: W (638697) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[13:49:35][D][esp-idf:000][BTU_TASK]: W (638703) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[13:49:35][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[13:49:35][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[13:49:35][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[13:49:35][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:49:35][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[13:49:35][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:49:35][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[13:49:35][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[13:49:35][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:49:35][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[13:49:35][D][ble_client_lambda:056]: BMT01 interface
+[13:49:35][W][component:237]: Component esp32_ble took a long time for an operation (52 ms).
+[13:49:35][W][component:238]: Components should block for at most 30 ms.
+[13:49:35][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[13:49:36][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -49.00000 dBm with 0 decimals of accuracy
+[13:49:36][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[13:49:36][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-49
+[13:49:36][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[13:49:36][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[13:49:36][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:49:36][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:49:36][D][esp-idf:000][BTU_TASK]: E (640494) BT_BTM: BTM_BleScan scan not active
+
+
+[13:49:36][D][esp-idf:000][BTU_TASK]: W (640504) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[13:49:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:49:41][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[13:49:41][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[13:49:41][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[13:49:41][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[13:49:41][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[13:49:41][D][esp32_ble_tracker:273]: Starting scan...
+[13:49:42][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[13:49:42][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[13:49:42][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[13:49:42][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:49:42][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[13:49:42][D][ble_client_lambda:050]: BMT01 interface
+[13:49:42][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[13:49:42][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:49:42][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:49:42][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[13:49:42][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:49:42][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:49:42][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[13:49:42][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:49:42][W][component:237]: Component esp32_ble took a long time for an operation (82 ms).
+[13:49:42][W][component:238]: Components should block for at most 30 ms.
+[13:49:42][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[13:49:43][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:49:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:49:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:49:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:49:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:49:50][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:49:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:50:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:50:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:50:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:50:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:50:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:50:40][D][esp-idf:000][wifi]: W (703810) wifi:
+[13:50:40][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[13:50:40][D][esp-idf:000][wifi]: 
+
+[13:50:41][D][esp-idf:000][BTU_TASK]: W (705597) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[13:50:41][D][esp-idf:000][BTU_TASK]: W (705600) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[13:50:41][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[13:50:41][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[13:50:41][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[13:50:41][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:50:41][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[13:50:41][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:50:41][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[13:50:41][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[13:50:41][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:50:42][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[13:50:42][D][ble_client_lambda:056]: BMT01 interface
+[13:50:42][W][component:237]: Component esp32_ble took a long time for an operation (61 ms).
+[13:50:42][W][component:238]: Components should block for at most 30 ms.
+[13:50:42][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[13:50:42][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -49.00000 dBm with 0 decimals of accuracy
+[13:50:42][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[13:50:42][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-49
+[13:50:42][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[13:50:42][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[13:50:42][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:50:42][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[13:50:42][D][esp-idf:000][BTU_TASK]: E (706039) BT_BTM: BTM_BleScan scan not active
+
+
+[13:50:42][D][esp-idf:000][BTU_TASK]: W (706049) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[13:50:43][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[13:50:43][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[13:50:43][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[13:50:43][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[13:50:43][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[13:50:43][D][esp32_ble_tracker:273]: Starting scan...
+[13:50:44][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[13:50:44][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[13:50:44][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[13:50:44][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:50:44][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[13:50:44][D][ble_client_lambda:050]: BMT01 interface
+[13:50:44][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[13:50:44][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:50:44][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:50:44][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[13:50:44][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[13:50:44][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[13:50:44][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[13:50:44][W][component:237]: Component esp32_ble took a long time for an operation (70 ms).
+[13:50:44][W][component:238]: Components should block for at most 30 ms.
+[13:50:44][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[13:50:44][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:50:44][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[13:50:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:50:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:50:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[13:50:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[13:50:50][W][component:170]: Component ble_client.sensor cleared Warning flag
+[13:50:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[13:51:14][D][esp-idf:000][BTU_TASK]: W (738382) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x8
+
+[13:51:14][D][esp-idf:000][BTU_TASK]: W (738386) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x8
+
+[13:51:14][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 8
+[13:51:14][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[13:51:14][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[13:51:14][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[13:51:14][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[13:51:14][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:51:14][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[13:51:14][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[13:51:14][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[13:51:14][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[13:51:14][D][ble_client_lambda:056]: BMT01 interface
+[13:51:14][W][component:237]: Component esp32_ble took a long time for an operation (68 ms).
+[13:51:14][W][component:238]: Components should block for at most 30 ms.
+[13:51:14][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[13:51:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:51:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:51:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:51:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:51:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:52:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:52:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:52:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:52:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:52:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:53:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:53:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:53:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:53:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:53:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:54:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:54:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:54:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:54:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:54:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:55:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:55:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:55:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:55:42][D][binary_sensor:036]: 'BMT01 interface BLE Status': Sending state OFF
+[13:55:43][D][esp32_ble_tracker:273]: Starting scan...
+[13:55:43][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state nan dBm with 0 decimals of accuracy
+[13:55:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:55:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:56:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:56:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:56:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:56:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:56:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:57:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:57:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:57:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:57:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:57:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:58:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:58:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:58:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:58:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:58:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:59:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:59:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[13:59:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[13:59:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[13:59:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:00:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:00:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:00:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:00:43][D][esp32_ble_tracker:273]: Starting scan...
+[14:00:43][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state nan dBm with 0 decimals of accuracy
+[14:00:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:00:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:01:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:01:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:01:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:01:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:01:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:02:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:02:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:02:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:02:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:02:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:03:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:03:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:03:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:03:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:03:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:04:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:04:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:04:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:04:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:04:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:05:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:05:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:05:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:05:43][D][esp32_ble_tracker:273]: Starting scan...
+[14:05:43][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state nan dBm with 0 decimals of accuracy
+[14:05:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:05:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:06:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:06:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:06:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:06:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:06:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:07:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:07:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:07:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:07:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:07:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:08:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:08:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:08:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:08:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:08:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:09:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:09:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:09:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:09:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:09:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:09:58][D][esp-idf:000][wifi]: W (1861915) wifi:
+[14:09:58][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:09:58][D][esp-idf:000][wifi]: 
+
+[14:10:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:10:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:10:28][D][esp-idf:000][wifi]: W (1892001) wifi:
+[14:10:28][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:10:28][D][esp-idf:000][wifi]: 
+
+[14:10:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:10:43][D][esp32_ble_tracker:273]: Starting scan...
+[14:10:43][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state nan dBm with 0 decimals of accuracy
+[14:10:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:10:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:10:58][D][esp-idf:000][wifi]: W (1922088) wifi:
+[14:10:58][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:10:58][D][esp-idf:000][wifi]: 
+
+[14:11:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:11:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:11:28][D][esp-idf:000][wifi]: W (1952175) wifi:
+[14:11:28][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:11:28][D][esp-idf:000][wifi]: 
+
+[14:11:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:11:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:11:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:12:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:12:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:12:28][D][esp-idf:000][wifi]: W (2012350) wifi:
+[14:12:28][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:12:28][D][esp-idf:000][wifi]: 
+
+[14:12:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:12:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:12:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:12:58][D][esp-idf:000][wifi]: W (2042437) wifi:
+[14:12:58][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:12:58][D][esp-idf:000][wifi]: 
+
+[14:13:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:13:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:13:28][D][esp-idf:000][wifi]: W (2072532) wifi:
+[14:13:28][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:13:28][D][esp-idf:000][wifi]: 
+
+[14:13:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:13:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:13:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:14:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:14:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:14:28][D][esp-idf:000][wifi]: W (2132697) wifi:
+[14:14:28][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:14:28][D][esp-idf:000][wifi]: 
+
+[14:14:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:14:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:14:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:14:59][D][esp-idf:000][wifi]: W (2162780) wifi:
+[14:14:59][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:14:59][D][esp-idf:000][wifi]: 
+
+[14:15:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:15:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:15:29][D][esp-idf:000][wifi]: W (2192866) wifi:
+[14:15:29][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:15:29][D][esp-idf:000][wifi]: 
+
+[14:15:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:15:43][D][esp32_ble_tracker:273]: Starting scan...
+[14:15:43][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state nan dBm with 0 decimals of accuracy
+[14:15:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:15:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:15:59][D][esp-idf:000][wifi]: W (2222957) wifi:
+[14:15:59][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:15:59][D][esp-idf:000][wifi]: 
+
+[14:16:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:16:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:16:29][D][esp-idf:000][wifi]: W (2253038) wifi:
+[14:16:29][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:16:29][D][esp-idf:000][wifi]: 
+
+[14:16:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:16:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:16:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:17:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:17:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:17:29][D][esp-idf:000][wifi]: W (2313309) wifi:
+[14:17:29][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:17:29][D][esp-idf:000][wifi]: 
+
+[14:17:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:17:47][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:17:50][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:17:59][D][esp-idf:000][wifi]: W (2343307) wifi:
+[14:17:59][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:17:59][D][esp-idf:000][wifi]: 
+
+[14:18:02][D][binary_sensor:036]: 'BMT01 interface BLE Status': Sending state ON
+[14:18:02][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -47.00000 dBm with 0 decimals of accuracy
+[14:18:02][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[14:18:02][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-47
+[14:18:02][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[14:18:02][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[14:18:02][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:18:02][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:18:02][D][esp-idf:000][BTU_TASK]: E (2346594) BT_BTM: BTM_BleScan scan not active
+
+
+[14:18:02][D][esp-idf:000][BTU_TASK]: W (2346598) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[14:18:02][I][esp32_ble_client:066]: [0] [12:F1:0A:04:27:D0] 0x00 Attempting BLE connection
+[14:18:07][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[14:18:07][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[14:18:07][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[14:18:07][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[14:18:07][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[14:18:07][D][esp32_ble_tracker:273]: Starting scan...
+[14:18:08][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[14:18:08][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[14:18:08][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[14:18:08][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:18:08][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[14:18:08][D][ble_client_lambda:050]: BMT01 interface
+[14:18:08][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[14:18:08][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:18:08][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:18:08][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[14:18:08][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:18:08][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:18:08][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[14:18:08][W][component:237]: Component esp32_ble took a long time for an operation (70 ms).
+[14:18:08][W][component:238]: Components should block for at most 30 ms.
+[14:18:08][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[14:18:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:18:17][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:18:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[14:18:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:18:20][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:18:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[14:18:29][D][esp-idf:000][wifi]: W (2373277) wifi:
+[14:18:29][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:18:29][D][esp-idf:000][wifi]: 
+
+[14:18:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:18:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:18:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[14:18:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:18:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[14:18:59][D][esp-idf:000][wifi]: W (2403405) wifi:
+[14:18:59][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:18:59][D][esp-idf:000][wifi]: 
+
+[14:19:08][D][esp-idf:000][BTU_TASK]: W (2411849) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[14:19:08][D][esp-idf:000][BTU_TASK]: W (2411856) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[14:19:08][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[14:19:08][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[14:19:08][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[14:19:08][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:19:08][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[14:19:08][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[14:19:08][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[14:19:08][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[14:19:08][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[14:19:08][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[14:19:08][D][ble_client_lambda:056]: BMT01 interface
+[14:19:08][W][component:237]: Component esp32_ble took a long time for an operation (58 ms).
+[14:19:08][W][component:238]: Components should block for at most 30 ms.
+[14:19:08][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[14:19:09][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -53.00000 dBm with 0 decimals of accuracy
+[14:19:09][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[14:19:09][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-53
+[14:19:09][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[14:19:09][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[14:19:09][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:19:09][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:19:09][D][esp-idf:000][BTU_TASK]: E (2413222) BT_BTM: BTM_BleScan scan not active
+
+
+[14:19:09][D][esp-idf:000][BTU_TASK]: W (2413227) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[14:19:10][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[14:19:10][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[14:19:10][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[14:19:10][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[14:19:10][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[14:19:10][D][esp32_ble_tracker:273]: Starting scan...
+[14:19:11][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[14:19:11][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[14:19:11][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[14:19:11][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:19:11][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[14:19:11][D][ble_client_lambda:050]: BMT01 interface
+[14:19:11][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[14:19:11][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:19:11][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:19:11][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[14:19:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:19:17][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:19:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[14:19:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:19:20][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:19:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[14:19:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:19:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:19:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[14:19:51][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:19:51][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[14:20:10][D][esp-idf:000][BTU_TASK]: W (2474695) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[14:20:10][D][esp-idf:000][BTU_TASK]: W (2474704) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[14:20:10][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[14:20:10][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[14:20:10][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[14:20:10][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:20:11][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[14:20:11][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[14:20:11][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[14:20:11][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[14:20:11][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[14:20:11][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[14:20:11][D][ble_client_lambda:056]: BMT01 interface
+[14:20:11][W][component:237]: Component esp32_ble took a long time for an operation (52 ms).
+[14:20:11][W][component:238]: Components should block for at most 30 ms.
+[14:20:11][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[14:20:13][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -52.00000 dBm with 0 decimals of accuracy
+[14:20:13][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[14:20:13][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-52
+[14:20:13][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[14:20:13][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[14:20:13][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:20:13][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:20:13][D][esp-idf:000][BTU_TASK]: E (2477354) BT_BTM: BTM_BleScan scan not active
+
+
+[14:20:13][D][esp-idf:000][BTU_TASK]: W (2477357) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[14:20:13][I][esp32_ble_client:066]: [0] [12:F1:0A:04:27:D0] 0x00 Attempting BLE connection
+[14:20:14][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[14:20:14][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[14:20:14][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[14:20:14][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[14:20:14][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[14:20:14][D][esp32_ble_tracker:273]: Starting scan...
+[14:20:14][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[14:20:15][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[14:20:15][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[14:20:15][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:20:15][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[14:20:15][D][ble_client_lambda:050]: BMT01 interface
+[14:20:15][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[14:20:15][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:20:15][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:20:15][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[14:20:15][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:20:15][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:20:15][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[14:20:15][W][component:237]: Component esp32_ble took a long time for an operation (71 ms).
+[14:20:15][W][component:238]: Components should block for at most 30 ms.
+[14:20:15][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[14:20:15][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[14:20:15][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[14:20:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:20:17][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:20:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[14:20:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:20:20][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:20:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[14:20:29][D][esp-idf:000][wifi]: W (2493622) wifi:
+[14:20:29][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:20:29][D][esp-idf:000][wifi]: 
+
+[14:20:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:20:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:20:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[14:20:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:20:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[14:20:59][D][esp-idf:000][wifi]: W (2523708) wifi:
+[14:20:59][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:20:59][D][esp-idf:000][wifi]: 
+
+[14:21:14][D][esp-idf:000][BTU_TASK]: W (2538140) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[14:21:14][D][esp-idf:000][BTU_TASK]: W (2538144) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[14:21:14][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[14:21:14][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[14:21:14][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[14:21:14][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:21:14][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[14:21:14][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[14:21:14][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[14:21:14][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[14:21:14][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[14:21:14][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[14:21:14][D][ble_client_lambda:056]: BMT01 interface
+[14:21:14][W][component:237]: Component esp32_ble took a long time for an operation (60 ms).
+[14:21:14][W][component:238]: Components should block for at most 30 ms.
+[14:21:14][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[14:21:14][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -52.00000 dBm with 0 decimals of accuracy
+[14:21:14][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[14:21:14][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-52
+[14:21:14][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[14:21:14][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[14:21:14][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:21:14][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:21:14][D][esp-idf:000][BTU_TASK]: E (2538665) BT_BTM: BTM_BleScan scan not active
+
+
+[14:21:14][D][esp-idf:000][BTU_TASK]: W (2538669) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[14:21:14][I][esp32_ble_client:066]: [0] [12:F1:0A:04:27:D0] 0x00 Attempting BLE connection
+[14:21:15][D][esp-idf:000][BTU_TASK]: W (2539638) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x3e
+
+[14:21:17][W][ble_sensor:123]: [Characteristic bbb3] Cannot poll, not connected
+[14:21:20][W][ble_sensor:123]: [Characteristic bbb1] Cannot poll, not connected
+[14:21:22][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[14:21:22][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[14:21:22][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[14:21:22][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[14:21:22][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[14:21:22][D][esp32_ble_tracker:273]: Starting scan...
+[14:21:22][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[14:21:22][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[14:21:22][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[14:21:22][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:21:22][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[14:21:22][D][ble_client_lambda:050]: BMT01 interface
+[14:21:22][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[14:21:22][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:21:22][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:21:22][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[14:21:22][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:21:22][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:21:22][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[14:21:22][W][component:237]: Component esp32_ble took a long time for an operation (70 ms).
+[14:21:22][W][component:238]: Components should block for at most 30 ms.
+[14:21:22][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[14:21:23][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[14:21:23][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[14:21:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:21:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:21:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:21:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[14:21:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:21:50][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:21:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[14:22:00][D][esp-idf:000][wifi]: W (2583880) wifi:
+[14:22:00][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:22:00][D][esp-idf:000][wifi]: 
+
+[14:22:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:22:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[14:22:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:22:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[14:22:22][D][esp-idf:000][BTU_TASK]: W (2606015) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[14:22:22][D][esp-idf:000][BTU_TASK]: W (2606020) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[14:22:22][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[14:22:22][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[14:22:22][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[14:22:22][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:22:22][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[14:22:22][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[14:22:22][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[14:22:22][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[14:22:22][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[14:22:22][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[14:22:22][D][ble_client_lambda:056]: BMT01 interface
+[14:22:22][W][component:237]: Component esp32_ble took a long time for an operation (63 ms).
+[14:22:22][W][component:238]: Components should block for at most 30 ms.
+[14:22:22][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[14:22:24][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -52.00000 dBm with 0 decimals of accuracy
+[14:22:24][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[14:22:24][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-52
+[14:22:24][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[14:22:24][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[14:22:24][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:22:24][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:22:24][D][esp-idf:000][BTU_TASK]: E (2607876) BT_BTM: BTM_BleScan scan not active
+
+
+[14:22:24][D][esp-idf:000][BTU_TASK]: W (2607879) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[14:22:27][D][esp-idf:000][BTU_TASK]: W (2611147) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x3e
+
+[14:22:30][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[14:22:30][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[14:22:30][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[14:22:30][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[14:22:30][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[14:22:31][D][esp32_ble_tracker:273]: Starting scan...
+[14:22:31][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[14:22:31][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[14:22:31][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[14:22:31][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:22:31][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[14:22:31][D][ble_client_lambda:050]: BMT01 interface
+[14:22:31][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[14:22:31][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:22:31][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:22:31][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[14:22:31][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:22:31][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:22:31][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[14:22:31][W][component:237]: Component esp32_ble took a long time for an operation (70 ms).
+[14:22:31][W][component:238]: Components should block for at most 30 ms.
+[14:22:31][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[14:22:31][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[14:22:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:22:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:22:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:22:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[14:22:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:22:50][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:22:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[14:23:00][D][esp-idf:000][wifi]: W (2644053) wifi:
+[14:23:00][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:23:00][D][esp-idf:000][wifi]: 
+
+[14:23:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:23:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[14:23:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:23:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[14:23:30][D][esp-idf:000][wifi]: W (2674140) wifi:
+[14:23:30][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:23:30][D][esp-idf:000][wifi]: 
+
+[14:23:31][D][esp-idf:000][BTU_TASK]: W (2674952) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[14:23:31][D][esp-idf:000][BTU_TASK]: W (2674958) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[14:23:31][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[14:23:31][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[14:23:31][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[14:23:31][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:23:31][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[14:23:31][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[14:23:31][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[14:23:31][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[14:23:31][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[14:23:31][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[14:23:31][D][ble_client_lambda:056]: BMT01 interface
+[14:23:31][W][component:237]: Component esp32_ble took a long time for an operation (52 ms).
+[14:23:31][W][component:238]: Components should block for at most 30 ms.
+[14:23:31][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[14:23:32][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -53.00000 dBm with 0 decimals of accuracy
+[14:23:32][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[14:23:32][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-53
+[14:23:32][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[14:23:32][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[14:23:32][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:23:32][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:23:32][D][esp-idf:000][BTU_TASK]: E (2675858) BT_BTM: BTM_BleScan scan not active
+
+
+[14:23:32][D][esp-idf:000][BTU_TASK]: W (2675868) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[14:23:32][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[14:23:32][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[14:23:32][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[14:23:32][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[14:23:32][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[14:23:32][D][esp32_ble_tracker:273]: Starting scan...
+[14:23:33][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[14:23:33][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[14:23:33][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[14:23:33][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:23:33][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[14:23:33][D][ble_client_lambda:050]: BMT01 interface
+[14:23:33][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[14:23:33][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:23:33][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:23:33][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[14:23:33][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:23:33][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:23:33][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[14:23:33][W][component:237]: Component esp32_ble took a long time for an operation (70 ms).
+[14:23:33][W][component:238]: Components should block for at most 30 ms.
+[14:23:33][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[14:23:33][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[14:23:33][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[14:23:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:23:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:23:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:23:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[14:23:50][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:23:50][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:23:50][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[14:24:00][D][esp-idf:000][wifi]: W (2704226) wifi:
+[14:24:00][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:24:00][D][esp-idf:000][wifi]: 
+
+[14:24:17][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:24:17][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
+[14:24:20][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:24:20][D][sensor:093]: 'Characteristic bbb1': Sending state 136.00000  with 0 decimals of accuracy
+[14:24:30][D][esp-idf:000][wifi]: W (2734314) wifi:
+[14:24:30][D][esp-idf:000][wifi]: [ADDBA]rx delba, code:39, delete tid:0
+[14:24:30][D][esp-idf:000][wifi]: 
+
+[14:24:33][D][esp-idf:000][BTU_TASK]: W (2736961) BT_APPL: gattc_conn_cb: if=3 st=0 id=3 rsn=0x13
+
+[14:24:33][D][esp-idf:000][BTU_TASK]: W (2736971) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13
+
+[14:24:33][D][esp32_ble_client:171]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_DISCONNECT_EVT, reason 19
+[14:24:33][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CLOSE_EVT
+[14:24:33][W][ble_sensor:037]: [BMT01 battery level] Disconnected!
+[14:24:33][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:24:33][W][ble_sensor:037]: [Characteristic bbb1] Disconnected!
+[14:24:33][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[14:24:33][D][sensor:093]: 'Characteristic bbb1': Sending state nan  with 0 decimals of accuracy
+[14:24:33][W][ble_sensor:037]: [Characteristic bbb3] Disconnected!
+[14:24:33][W][component:157]: Component ble_client.sensor set Warning flag: unspecified
+[14:24:33][D][sensor:093]: 'Characteristic bbb3': Sending state nan  with 0 decimals of accuracy
+[14:24:33][D][ble_client_lambda:056]: BMT01 interface
+[14:24:33][W][component:237]: Component esp32_ble took a long time for an operation (55 ms).
+[14:24:33][W][component:238]: Components should block for at most 30 ms.
+[14:24:33][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state OFF
+[14:24:38][D][sensor:093]: 'BMT01 interface BLE RSSI': Sending state -52.00000 dBm with 0 decimals of accuracy
+[14:24:38][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] Found device
+[14:24:38][D][esp32_ble_tracker:677]: Found device 12:F1:0A:04:27:D0 RSSI=-52
+[14:24:38][D][esp32_ble_tracker:698]:   Address Type: PUBLIC
+[14:24:38][D][esp32_ble_tracker:700]:   Name: 'ck_10024a18a0'
+[14:24:38][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:24:38][D][esp32_ble_tracker:222]: Pausing scan to make connection...
+[14:24:38][D][esp-idf:000][BTU_TASK]: E (2742227) BT_BTM: BTM_BleScan scan not active
+
+
+[14:24:38][D][esp-idf:000][BTU_TASK]: W (2742236) BT_APPL:  bta_dm_ble_scan stop scan failed, status=0x6
+
+
+[14:24:40][W][ble_sensor:123]: [BMT01 battery level] Cannot poll, not connected
+[14:24:40][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_CONNECT_EVT
+[14:24:40][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_OPEN_EVT
+[14:24:40][I][ble_sensor:031]: [BMT01 battery level] Connected successfully!
+[14:24:40][I][ble_sensor:031]: [Characteristic bbb1] Connected successfully!
+[14:24:40][I][ble_sensor:031]: [Characteristic bbb3] Connected successfully!
+[14:24:40][D][esp32_ble_tracker:273]: Starting scan...
+[14:24:41][D][esp32_ble_client:306]: [0] [12:F1:0A:04:27:D0] Event 46
+[14:24:41][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_SEARCH_CMPL_EVT
+[14:24:41][I][esp32_ble_client:227]: [0] [12:F1:0A:04:27:D0] Connected
+[14:24:41][D][sensor:093]: 'BMT01 battery level': Sending state nan % with 0 decimals of accuracy
+[14:24:41][W][ble_sensor:048]: No sensor characteristic found at service 0000180F-0000-1000-8000-00805F9B34FB char 00002A19-0000-1000-8000-00805F9B34FB
+[14:24:41][D][ble_client_lambda:050]: BMT01 interface
+[14:24:41][D][esp32_ble_client:187]: [0] [12:F1:0A:04:27:D0] cfg_mtu status 0, mtu 73
+[14:24:41][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:24:41][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:24:41][D][ble_sensor:103]: Register for notify on 0000BBB1-0000-1000-8000-00805F9B34FB complete
+[14:24:41][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_REG_FOR_NOTIFY_EVT
+[14:24:41][D][esp32_ble_client:296]: Wrote notify descriptor 1, properties=18
+[14:24:41][D][ble_sensor:103]: Register for notify on 0000BBB3-0000-1000-8000-00805F9B34FB complete
+[14:24:41][W][component:237]: Component esp32_ble took a long time for an operation (70 ms).
+[14:24:41][W][component:238]: Components should block for at most 30 ms.
+[14:24:41][D][binary_sensor:036]: 'BMT01 interface Connection': Sending state ON
+[14:24:41][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[14:24:41][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_WRITE_DESCR_EVT
+[14:24:47][D][esp32_ble_client:110]: [0] [12:F1:0A:04:27:D0] ESP_GATTC_READ_CHAR_EVT
+[14:24:47][W][component:170]: Component ble_client.sensor cleared Warning flag
+[14:24:47][D][sensor:093]: 'Characteristic bbb3': Sending state 136.00000  with 0 decimals of accuracy
